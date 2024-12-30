@@ -1,0 +1,199 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutternotisys"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:2:5-80
+16-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:2:22-78
+17    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+17-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:3:5-79
+17-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:3:22-76
+18    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+18-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:4:5-74
+18-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:4:22-71
+19    <!--
+20 Required to query activities that can process text, see:
+21         https://developer.android.com/training/package-visibility and
+22         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+23
+24         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+25    -->
+26    <queries>
+26-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:55:5-60:15
+27        <intent>
+27-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:56:9-59:18
+28            <action android:name="android.intent.action.PROCESS_TEXT" />
+28-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:57:13-72
+28-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:57:21-70
+29
+30            <data android:mimeType="text/plain" />
+30-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:58:13-50
+30-->/Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/android/app/src/main/AndroidManifest.xml:58:19-48
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.VIBRATE" />
+34-->[:flutter_local_notifications] /Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-66
+34-->[:flutter_local_notifications] /Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-63
+35    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+35-->[:flutter_local_notifications] /Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-77
+35-->[:flutter_local_notifications] /Users/pyaephyowin/Documents/LearningFlutter/flutterNotiSys/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-74
+36
+37    <permission
+37-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+38        android:name="com.example.flutternotisys.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.example.flutternotisys.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+42
+43    <application
+44        android:name="android.app.Application"
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.1] /Users/pyaephyowin/.gradle/caches/transforms-3/0e8a7b0f3d0b6d1d9c5a154de28c5430/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="true"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="flutternotisys" >
+50        <activity
+51            android:name="com.example.flutternotisys.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:enableOnBackInvokedCallback="true"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:showWhenLocked="true"
+58            android:taskAffinity=""
+59            android:theme="@style/LaunchTheme"
+60            android:turnScreenOn="true"
+61            android:windowSoftInputMode="adjustResize" >
+62
+63            <!--
+64                 Specifies an Android theme to apply to this Activity as soon as
+65                 the Android process has started. This theme is visible to the user
+66                 while the Flutter UI initializes. After that, this theme continues
+67                 to determine the Window background behind the Flutter UI.
+68            -->
+69            <meta-data
+70                android:name="io.flutter.embedding.android.NormalTheme"
+71                android:resource="@style/NormalTheme" />
+72
+73            <intent-filter>
+74                <action android:name="android.intent.action.MAIN" />
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+77            </intent-filter>
+78        </activity>
+79        <!--
+80             Don't delete the meta-data below.
+81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+82        -->
+83        <meta-data
+84            android:name="flutterEmbedding"
+85            android:value="2" />
+86
+87        <receiver
+88            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+89            android:exported="false" />
+90        <receiver
+91            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+92            android:exported="false" >
+93            <intent-filter>
+94                <action android:name="android.intent.action.BOOT_COMPLETED" />
+95                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+96                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+97                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+98            </intent-filter>
+99        </receiver>
+100
+101        <uses-library
+101-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+102            android:name="androidx.window.extensions"
+102-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+103            android:required="false" />
+103-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+104        <uses-library
+104-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+105            android:name="androidx.window.sidecar"
+105-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+106            android:required="false" />
+106-->[androidx.window:window:1.2.0] /Users/pyaephyowin/.gradle/caches/transforms-3/74b091d9c24df615844df9a5414679dd/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+107
+108        <provider
+108-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+110            android:authorities="com.example.flutternotisys.androidx-startup"
+110-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+111            android:exported="false" >
+111-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/pyaephyowin/.gradle/caches/transforms-3/e95e48f88b446d02edd1f720241b1319/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+117                android:value="androidx.startup" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+118        </provider>
+119
+120        <receiver
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+121            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+122            android:directBootAware="false"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+123            android:enabled="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+124            android:exported="true"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+125            android:permission="android.permission.DUMP" >
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+127                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+130                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+133                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+134            </intent-filter>
+135            <intent-filter>
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+136                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/pyaephyowin/.gradle/caches/transforms-3/cb0e55275c114fb2f318e7ae492c65a6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+137            </intent-filter>
+138        </receiver>
+139    </application>
+140
+141</manifest>
