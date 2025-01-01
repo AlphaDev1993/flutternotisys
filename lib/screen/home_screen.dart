@@ -13,9 +13,10 @@ import 'package:flutternotisys/widgets/date_time_selecter.dart';
 
  class _HomeScreenState extends State<HomeScreen> {
 
-   final NotificationService _notificationService = NotificationService();
+    final NotificationService _notificationService = NotificationService();
    DateTime selectedDate = DateTime.now();
    TimeOfDay selectedTime = TimeOfDay.now();
+
     Future<void> scudleNotification()async{
       final DateTime _scudleDateTime =  DateTime(selectedDate.year,selectedDate.month,selectedDate.day,selectedTime.hour,selectedTime.minute);
       
@@ -54,7 +55,9 @@ import 'package:flutternotisys/widgets/date_time_selecter.dart';
        child:  Column(
          crossAxisAlignment: CrossAxisAlignment.stretch,
          children: [
-            ElevatedButton(onPressed: _notificationService.showInstanceNoti,
+            ElevatedButton(onPressed:
+              _notificationService.showInstanceNoti
+            ,
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 12),
                   backgroundColor: Colors.indigo,
